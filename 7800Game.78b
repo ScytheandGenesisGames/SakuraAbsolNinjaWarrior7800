@@ -1,25 +1,18 @@
-<<<<<<< HEAD:7800Game - Ghostbusters.78b
- set 7800header 'name Ghostbusters Terror At New York'
- set multibutton on
- set tv NTSC
-=======
- set 7800header 'Dr Valentine Fionas Revenge'
+
+ set 7800header 'Sakura the Shiny Absol Ninja Warrior'
  set multibutton on
  set tv NTSC
  
 
->>>>>>> cae580ccbcd35c19fa5737576bb72bfb900b9bc7:7800Game - possible Dr Val Game.78b
+
  
  set zoneheight 16
  displaymode 160B 
  set plotvalueonscreen on
  set bankset on
-<<<<<<< HEAD:7800Game - Ghostbusters.78b
+
  set romsize 128k
-=======
- set romsize 512k
->>>>>>> cae580ccbcd35c19fa5737576bb72bfb900b9bc7:7800Game - possible Dr Val Game.78b
- 
+
  incgraphic font.png 160A
  characterset font
  alphachars '0123456789abcdefghijklmnopqrstuvwxyz>`?!/.,-_()[]&AB '
