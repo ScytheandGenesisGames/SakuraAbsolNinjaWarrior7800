@@ -1,0 +1,57 @@
+<<<<<<< HEAD:7800Game - Ghostbusters.78b
+ set 7800header 'name Ghostbusters Terror At New York'
+ set multibutton on
+ set tv NTSC
+=======
+ set 7800header 'Dr Valentine Fionas Revenge'
+ set multibutton on
+ set tv NTSC
+ 
+
+>>>>>>> cae580ccbcd35c19fa5737576bb72bfb900b9bc7:7800Game - possible Dr Val Game.78b
+ 
+ set zoneheight 16
+ displaymode 160B 
+ set plotvalueonscreen on
+ set bankset on
+<<<<<<< HEAD:7800Game - Ghostbusters.78b
+ set romsize 128k
+=======
+ set romsize 512k
+>>>>>>> cae580ccbcd35c19fa5737576bb72bfb900b9bc7:7800Game - possible Dr Val Game.78b
+ 
+ incgraphic font.png 160A
+ characterset font
+ alphachars '0123456789abcdefghijklmnopqrstuvwxyz>`?!/.,-_()[]&AB '
+
+ rem pallette 0 text
+ P0C1=$0F 
+ P0C2=$0C
+ P0C3=$0A
+
+ BACKGRND = $00
+
+ dim bgColor = var1
+ dim wait = var2
+ 
+ bgColor = 0
+ wait = 0
+
+
+
+gameloop
+
+  clearscreen
+
+ wait = wait + 1
+ if wait >10 then wait= 0 : bgColor = bgColor +1
+ if bgColor > 127 then bgColor = 0
+ BACKGRND = bgColor
+
+ plotchars 'tangle is one rad lemur!' 0 58 5
+
+ 
+ 
+  drawscreen
+
+  goto gameloop
